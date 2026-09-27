@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gamage Craft House | Craft Materials, Fabric & Sewing Accessories</title>
+  <meta name="description" content="Shop craft items, craft materials, fabric, cloth, sewing accessories and creative supplies from Gamage Craft House." />
+  <meta name="keywords" content="craft supplies Sri Lanka, sewing accessories, fabric, cloth, craft items, Karandeniya, Gamage Craft House" />
+  <meta property="og:title" content="Gamage Craft House" />
+  <meta property="og:description" content="Everything You Need to Create Something Beautiful" />
+  <meta name="theme-color" content="#c65d7b" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= Loading Animation ======= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-icon">&#10022;</span>
+      <p class="loader-text">Gamage Craft House</p>
+    </div>
+  </div>
+
+  <!-- ======= Announcement Bar ======= -->
+  <div class="announce-bar" role="region" aria-label="Announcements">
+    <p id="announceText">Welcome to Gamage Craft House &bull; Quality Craft &amp; Sewing Supplies</p>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Gamage Craft House - Home">
+        <span class="logo-icon" aria-hidden="true">&#9998;</span>
+        <span class="logo-text">Gamage <em>Craft House</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <button class="nav-close" id="navClose" aria-label="Close menu">&times;</button>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#shop" class="nav-link" data-cat-link="Craft Item">Craft Items</a></li>
+          <li><a href="#shop" class="nav-link" data-cat-link="Craft Material">Craft Materials</a></li>
+          <li><a href="#shop" class="nav-link" data-cat-link="Fabric">Fabric &amp; Cloth</a></li>
+          <li><a href="#shop" class="nav-link" data-cat-link="Sewing Accessories">Sewing Accessories</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search products">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="View wishlist">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <span class="badge" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="View shopping cart">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Inline search bar (toggled) -->
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="search" id="searchInput" placeholder="Search products, categories, materials..." aria-label="Search products" />
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Handpicked Craft &amp; Sewing Supplies</span>
+          <h1 class="hero-title">Everything You Need to Create <span class="accent">Something Beautiful</span></h1>
+          <p class="hero-desc">Discover craft items, craft materials, fabrics, sewing accessories and creative supplies at Gamage Craft House.</p>
+          <div class="hero-btns">
+            <a href="#shop" class="btn btn-primary">Shop Now</a>
+            <a href="#categories" class="btn btn-outline">Explore Categories</a>
+          </div>
+          <div class="hero-stats" aria-label="Store highlights">
+            <div class="stat"><strong>16+</strong><span>Products</span></div>
+            <div class="stat"><strong>6</strong><span>Categories</span></div>
+            <div class="stat"><strong>100%</strong><span>Handpicked</span></div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img id="heroImg" alt="Handmade crafts, colorful fabrics, sewing threads and ribbons arranged on a craft table" width="560" height="420" />
+          <div class="hero-card hero-card-1"><span>&#10022;</span> Handmade with love</div>
+          <div class="hero-card hero-card-2"><span>&#10022;</span> Island-wide delivery</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Categories ======= -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Browse Our Collections</span>
+          <h2>Main Product Categories</h2>
+          <p>Find exactly what your next project needs, organized just for you.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ======= Special Offers ======= -->
+    <section class="section offers-section" id="offers">
+      <div class="container">
+        <div class="section-head light">
+          <span class="eyebrow">Limited Time</span>
+          <h2>Special Offers</h2>
+          <p>Discounted favourites across craft materials and sewing accessories.</p>
+        </div>
+        <div class="offers-grid">
+          <article class="offer-card offer-rose">
+            <span class="offer-tag">20% OFF</span>
+            <h3>Craft Materials</h3>
+            <p>Pipe cleaners, beads and ribbons at beautiful prices.</p>
+            <button class="btn btn-light" data-offer="Craft Material">Shop Offers</button>
+          </article>
+          <article class="offer-card offer-sage">
+            <span class="offer-tag">15% OFF</span>
+            <h3>Sewing Accessories</h3>
+            <p>Threads, needles, buttons and more to stitch your dreams.</p>
+            <button class="btn btn-light" data-offer="Sewing Accessories">Shop Offers</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Shop / Featured Products ======= -->
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Store</span>
+          <h2>Featured Products</h2>
+          <p>Search, filter and sort to find your perfect craft supply.</p>
+        </div>
+
+        <!-- Toolbar: search, category, price, sort -->
+        <div class="toolbar" role="region" aria-label="Product filters">
+          <div class="toolbar-row">
+            <div class="toolbar-field toolbar-search">
+              <label for="shopSearch">Search</label>
+              <input type="search" id="shopSearch" placeholder="Try &quot;thread&quot; or &quot;flower&quot;..." />
+            </div>
+            <div class="toolbar-field">
+              <label for="catFilter">Category</label>
+              <select id="catFilter">
+                <option value="All">All Categories</option>
+                <option value="Craft Item">Craft Item</option>
+                <option value="Craft Material">Craft Material</option>
+                <option value="Fabric">Fabric</option>
+                <option value="Cloth">Cloth</option>
+                <option value="Sewing Accessories">Sewing Accessories</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="toolbar-field">
+              <label for="priceFilter">Price Range</label>
+              <select id="priceFilter">
+                <option value="all">Any Price</option>
+                <option value="0-500">Under Rs. 500</option>
+                <option value="500-1000">Rs. 500 &ndash; Rs. 1,000</option>
+                <option value="1000-2500">Rs. 1,000 &ndash; Rs. 2,500</option>
+                <option value="2500-5000">Rs. 2,500 &ndash; Rs. 5,000</option>
+                <option value="5000-999999">Above Rs. 5,000</option>
+                <option value="custom">Custom Range</option>
+              </select>
+            </div>
+            <div class="toolbar-field toolbar-custom" id="customRange" hidden>
+              <label for="priceMin">Custom (Rs.)</label>
+              <div class="custom-range-inputs">
+                <input type="number" id="priceMin" placeholder="Min" min="0" aria-label="Minimum price" />
+                <input type="number" id="priceMax" placeholder="Max" min="0" aria-label="Maximum price" />
+                <button class="btn btn-small btn-primary" id="applyCustomPrice">Apply</button>
+              </div>
+            </div>
+            <div class="toolbar-field">
+              <label for="sortSelect">Sort By</label>
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="popular">Popular</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+          <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        </div>
+
+        <div class="product-grid" id="productGrid"><!-- rendered by JS --></div>
+        <p class="no-results" id="noResults" hidden>No products match your search. Try a different keyword or filter.</p>
+      </div>
+    </section>
+
+    <!-- ======= New Arrivals ======= -->
+    <section class="section alt" id="new-arrivals">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Fresh In Store</span>
+          <h2>New Arrivals</h2>
+          <p>The newest additions to our craft shelves.</p>
+        </div>
+        <div class="product-grid compact" id="newGrid"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ======= Best Sellers ======= -->
+    <section class="section" id="best-sellers">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Customer Favourites</span>
+          <h2>Best Sellers</h2>
+          <p>Loved by makers across Sri Lanka.</p>
+        </div>
+        <div class="product-grid compact" id="bestGrid"><!-- rendered by JS --></div>
+      </div>
+    </section>
+
+    <!-- ======= Why Choose Us ======= -->
+    <section class="section alt" id="why-us">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Promise</span>
+          <h2>Why Choose Gamage Craft House?</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">&#10022;</span>
+            <h3>Quality Products</h3>
+            <p>Carefully selected craft and sewing supplies.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">&#9998;</span>
+            <h3>Creative Selection</h3>
+            <p>Products for creative people and DIY makers.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">&#9993;</span>
+            <h3>Easy Ordering</h3>
+            <p>Order easily through WhatsApp.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">&#9825;</span>
+            <h3>Friendly Service</h3>
+            <p>We are happy to help with your craft needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= About ======= -->
+    <section class="section" id="about">
+      <div class="container about-inner">
+        <div class="about-image">
+          <img id="aboutImg" alt="Colourful handmade crafts and sewing materials displayed in a warm craft shop" width="520" height="400" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <span class="eyebrow">Our Story</span>
+          <h2>About Gamage Craft House</h2>
+          <p>Welcome to Gamage Craft House.</p>
+          <p>We provide craft items, craft materials, fabrics, cloth, sewing accessories and other creative supplies for makers, artists, hobbyists and small businesses.</p>
+          <p>Our goal is to make quality creative materials easy to find and easy to order.</p>
+          <div class="about-info">
+            <div>
+              <h4><span aria-hidden="true">&#9873;</span> Visit Us</h4>
+              <p>Near Police Station,<br />Karandeniya,<br />Sri Lanka</p>
+            </div>
+            <div>
+              <h4><span aria-hidden="true">&#9742;</span> Call / WhatsApp</h4>
+              <p>+94 740 788 133</p>
+              <div class="about-btns">
+                <a href="tel:+94740788133" class="btn btn-small btn-outline">Call Now</a>
+                <a href="https://wa.me/94740788133?text=Hello%20Gamage%20Craft%20House!" target="_blank" rel="noopener" class="btn btn-small btn-whatsapp">WhatsApp Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Newsletter ======= -->
+    <section class="section newsletter-section">
+      <div class="container newsletter-box">
+        <div>
+          <h2>Stay Updated</h2>
+          <p>Get updates about new craft materials, special offers and new arrivals.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <label class="sr-only" for="newsletterEmail">Email address</label>
+          <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+          <p class="form-error" id="newsletterError" role="alert" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Contact Us</h2>
+          <p>Questions about a product or your order? We would love to hear from you.</p>
+        </div>
+        <div class="contact-inner">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" required />
+                <span class="field-error" hidden>Please enter your name.</span>
+              </div>
+              <div class="form-field">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" required />
+                <span class="field-error" hidden>Please enter a valid email.</span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" required />
+              <span class="field-error" hidden>Please enter your phone number.</span>
+            </div>
+            <div class="form-field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="5" required></textarea>
+              <span class="field-error" hidden>Please write a message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <aside class="contact-info">
+            <h3>Gamage Craft House</h3>
+            <p><strong>Address:</strong><br />Near Police Station,<br />Karandeniya, Sri Lanka</p>
+            <p><strong>Phone / WhatsApp:</strong><br />+94 740 788 133</p>
+            <div class="socials" aria-label="Social media links">
+              <a href="https://wa.me/94740788133" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-btn whatsapp">WA</a>
+              <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn facebook">f</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn instagram">&#9825;</a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social-btn youtube">&#9658;</a>
+            </div>
+            <p class="contact-note">Prefer to order directly? Message us on WhatsApp and we will confirm your order personally.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon" aria-hidden="true">&#9998;</span>
+          <span class="logo-text">Gamage <em>Craft House</em></span>
+        </a>
+        <p>Everything You Need to Create Something Beautiful</p>
+        <div class="socials">
+          <a href="https://wa.me/94740788133" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-btn whatsapp">WA</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn facebook">f</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn instagram">&#9825;</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube" class="social-btn youtube">&#9658;</a>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Categories">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#shop" data-cat-link="Craft Item">Craft Item</a></li>
+          <li><a href="#shop" data-cat-link="Craft Material">Craft Material</a></li>
+          <li><a href="#shop" data-cat-link="Fabric">Fabric</a></li>
+          <li><a href="#shop" data-cat-link="Cloth">Cloth</a></li>
+          <li><a href="#shop" data-cat-link="Sewing Accessories">Sewing Accessories</a></li>
+          <li><a href="#shop" data-cat-link="Other">Other</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="#contact">Shipping Information</a></li>
+          <li><a href="#contact">Returns</a></li>
+          <li><a href="#contact">Privacy Policy</a></li>
+          <li><a href="#contact">Terms &amp; Conditions</a></li>
+        </ul>
+        <p class="footer-contact">
+          <a href="tel:+94740788133">+94 740 788 133</a><br />
+          Near Police Station,<br />Karandeniya, Sri Lanka
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gamage Craft House. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ======= Product Details Modal ======= -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="pmName" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box product-modal-box">
+      <button class="modal-close" data-close aria-label="Close product details">&times;</button>
+      <div class="pm-grid">
+        <div class="pm-image"><img id="pmImg" alt="" width="420" height="420" /></div>
+        <div class="pm-info">
+          <span class="pm-cat" id="pmCat"></span>
+          <h3 id="pmName"></h3>
+          <div class="pm-rating" id="pmRating" aria-label="Product rating"></div>
+          <div class="pm-price" id="pmPrice"></div>
+          <p class="pm-stock" id="pmStock"></p>
+          <p class="pm-desc" id="pmDesc"></p>
+          <p class="pm-meta"><strong>Material:</strong> <span id="pmMaterial"></span></p>
+          <div class="pm-colors" id="pmColors"></div>
+          <div class="pm-sizes" id="pmSizes"></div>
+          <div class="pm-actions">
+            <div class="qty-selector" id="pmQtySelector">
+              <button type="button" id="pmQtyMinus" aria-label="Decrease quantity">&minus;</button>
+              <input type="number" id="pmQty" value="1" min="1" aria-label="Quantity" />
+              <button type="button" id="pmQtyPlus" aria-label="Increase quantity">+</button>
+            </div>
+            <button class="btn btn-primary" id="pmAddToCart">Add to Cart</button>
+            <button class="btn btn-rose" id="pmBuyNow">Buy Now</button>
+          </div>
+          <button class="btn btn-whatsapp btn-full" id="pmWhatsapp">
+            <span aria-hidden="true">WA</span> Order via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Cart Drawer ======= -->
+  <div class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart" hidden>
+    <div class="drawer-backdrop" data-close></div>
+    <aside class="drawer-panel">
+      <div class="drawer-head">
+        <h3>Your Cart <span class="drawer-count" id="cartDrawerCount"></span></h3>
+        <button class="modal-close" data-close aria-label="Close cart">&times;</button>
+      </div>
+      <div class="drawer-body" id="cartItems"><!-- rendered by JS --></div>
+      <div class="drawer-foot" id="cartFoot">
+        <div class="cart-total-row"><span>Total</span><strong id="cartTotal">Rs. 0</strong></div>
+        <button class="btn btn-primary btn-full" id="checkoutBtn">Proceed to Checkout</button>
+        <button class="btn btn-outline btn-full" data-close>Continue Shopping</button>
+        <button class="btn btn-whatsapp btn-full" id="cartWhatsapp">Send Order to WhatsApp</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ======= Wishlist Drawer ======= -->
+  <div class="drawer" id="wishlistDrawer" role="dialog" aria-modal="true" aria-label="Wishlist" hidden>
+    <div class="drawer-backdrop" data-close></div>
+    <aside class="drawer-panel">
+      <div class="drawer-head">
+        <h3>Your Wishlist <span class="drawer-count" id="wishDrawerCount"></span></h3>
+        <button class="modal-close" data-close aria-label="Close wishlist">&times;</button>
+      </div>
+      <div class="drawer-body" id="wishItems"><!-- rendered by JS --></div>
+    </aside>
+  </div>
+
+  <!-- ======= Checkout Modal ======= -->
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="coTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box checkout-box">
+      <button class="modal-close" data-close aria-label="Close checkout">&times;</button>
+      <h3 id="coTitle">Checkout</h3>
+      <div class="co-grid">
+        <form class="co-form" id="checkoutForm" novalidate>
+          <h4>Customer Information</h4>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="coName">Full Name</label>
+              <input type="text" id="coName" required />
+              <span class="field-error" hidden>Please enter your full name.</span>
+            </div>
+            <div class="form-field">
+              <label for="coPhone">Phone Number</label>
+              <input type="tel" id="coPhone" required />
+              <span class="field-error" hidden>Please enter your phone number.</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="coWhatsapp">WhatsApp Number</label>
+              <input type="tel" id="coWhatsapp" />
+              <span class="field-error" hidden>Please enter a valid WhatsApp number.</span>
+            </div>
+            <div class="form-field">
+              <label for="coEmail">Email</label>
+              <input type="email" id="coEmail" required />
+              <span class="field-error" hidden>Please enter a valid email.</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="coAddress">Address</label>
+            <textarea id="coAddress" rows="2" required></textarea>
+            <span class="field-error" hidden>Please enter your delivery address.</span>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="coCity">City</label>
+              <input type="text" id="coCity" required />
+              <span class="field-error" hidden>Please enter your city.</span>
+            </div>
+            <div class="form-field">
+              <label for="coPostal">Postal Code</label>
+              <input type="text" id="coPostal" />
+              <span class="field-error" hidden>Please enter a valid postal code.</span>
+            </div>
+          </div>
+          <h4>Payment Method</h4>
+          <div class="payment-options" role="radiogroup" aria-label="Payment method">
+            <label class="payment-option"><input type="radio" name="payment" value="Cash on Delivery" checked /> Cash on Delivery</label>
+            <label class="payment-option"><input type="radio" name="payment" value="Bank Transfer" /> Bank Transfer</label>
+            <label class="payment-option"><input type="radio" name="payment" value="Online Payment" /> Online Payment</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Place Order</button>
+          <button type="button" class="btn btn-whatsapp btn-full" id="coWhatsappBtn">
+            <span aria-hidden="true">WA</span> Send Order to WhatsApp
+          </button>
+        </form>
+        <aside class="co-summary">
+          <h4>Order Summary</h4>
+          <div id="coSummaryItems"></div>
+          <div class="cart-total-row"><span>Subtotal</span><strong id="coSubtotal">Rs. 0</strong></div>
+          <div class="cart-total-row"><span>Delivery</span><strong id="coDelivery">Rs. 350</strong></div>
+          <div class="cart-total-row grand"><span>Total</span><strong id="coTotal">Rs. 0</strong></div>
+        </aside>
+      </div>
+      <div class="order-success" id="orderSuccess" hidden>
+        <span class="success-icon" aria-hidden="true">&#10003;</span>
+        <h4>Thank You for Your Order!</h4>
+        <p>Your order has been placed. We will contact you shortly to confirm details and delivery.</p>
+        <p class="success-sub">You can also send your order to WhatsApp for faster confirmation.</p>
+        <div class="success-btns">
+          <button class="btn btn-whatsapp" id="successWhatsapp">Send Order to WhatsApp</button>
+          <button class="btn btn-outline" data-close>Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Toast Notifications ======= -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="false"></div>
+
+  <!-- ======= Back To Top ======= -->
+  <button class="back-top" id="backTop" aria-label="Back to top" hidden>&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
